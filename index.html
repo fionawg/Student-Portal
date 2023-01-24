@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h1>Student's Portal</h1>
+    <p>
+        Welcome to the student's portal. This is where you can add classes, grades, 
+        and find your GPA. AP classes will receive a 1.1 boost. Click get 
+        GPA to see your GPA. Enjoy!
+    </p>
+
+    <h3>GPA: <span id="gpa">Click button</span></h3>
+
+    <p id="list">The classes will be placed here.</p>
+
+    <h4>Add a class (enter in this format: ClassName;Grade): </h4>
+    <div id="flex">
+        <div id="child"><input type="text" id="textt" placeholder="Enter Info"></div>
+        <div id="child"><button id="button1" onclick="addToList();">Add Class</button></div>
+    </div>
+
+    <h4>Enter the class number that you'll like to remove:</h4>
+    <div id="flex">
+        <div id="child"><input type="text" id="delete" placeholder="Enter Number"></div>
+        <div id="child"><button onclick="deleteItem();">Remove Item</button></div>
+    </div>
+
+    <div id="flexbox">
+        <div id="piece">
+            <h4>GPA Finder</h4>
+            <div id="flex">
+                <div id="child"><button onclick="findGPA();">Get GPA</button></div>
+            </div>
+        </div>
+        <div id="piece">
+            <h4>Reset Your Classes</h4>
+            <div id="flex">
+                <div id="child"><button onclick="deleteList();">Delete Classes</button></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
